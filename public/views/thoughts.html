@@ -1,0 +1,21 @@
+<div data-ng-controller="ThoughtsCtrl">
+    <div class="toolbar">
+        <div class="flexbox-row">
+            <div class="key-box" data-ng-repeat="key in keywords">
+                <i class="fa fa-{{key.icon}}"></i>
+                {{key.keyword}}<!--
+            <i class="fa fa-times" data-ng-click="deleteKey(key)"></i>    -->
+            </div>
+        </div>
+        <div class="flexbox-row pull-right">
+            <div class="icon">
+                <i class="fa fa-lock" data-ng-click="create=!create"></i>
+            </div>
+        </div>
+    </div>
+    <div data-ng-repeat="art in articles" class="art-box">        
+        <span>{{art.title}}</span>
+        <i class="fa fa-times" data-ng-click="deleteArt(art)"></i>
+    </div><br/>    
+    <ng-include data-ng-if="create" src="'views/create-view.html'"></ng-include>
+</div>

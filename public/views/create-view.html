@@ -1,0 +1,30 @@
+<div class="create-view" data-ng-controller="CreateViewCtrl">
+    <div class="element">
+        <label>Title</label>
+        <input type="text" class="form-control" data-ng-model="cv.title">
+    </div>
+    <div class="element">
+        <label>Keyword(s)</label>
+        <input type="text" class="form-control" data-ng-model="cv.keywords">
+    </div>
+    <div class="element">
+        <label>Content</label>
+        <textarea class="form-control" data-ng-model="cv.content"></textarea>
+    </div>
+    <div class="form-buttons">
+        <input type="button" class="btn btn-primary btn-small" data-ng-disabled="!cv.title || !cv.keywords || !cv.content" value="Save" data-ng-click="saveContent()">
+        <input type="button" class="btn btn-small" value="Cancel" data-ng-click="cv={}">
+    </div><br/><br/><br/>
+     <div class="element">
+        <label>Keyword</label>
+        <input type="text" class="form-control" data-ng-model="kw.keyword">
+    </div>   
+     <div class="element">
+        <label>FA Icon Name</label>
+        <input type="text" class="form-control" data-ng-model="kw.icon">
+    </div>
+     <div class="form-buttons">
+        <input type="button" class="btn btn-primary btn-small" data-ng-disabled="!kw.keyword" value="Add Key" data-ng-click="saveKeyword()">
+        <input type="button" class="btn btn-small" value="Cancel" data-ng-click="kw={}">
+    </div>
+</div>

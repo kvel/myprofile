@@ -1,0 +1,117 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+html, body{
+   // background: rgba(75,186,207,1);
+    height: 100%;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.left-pane{
+    background: #222222;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    .photo{
+        img{
+            width: 150px;
+            margin-top: 50px;
+        }
+    }
+    .menu{
+        padding: 50px 0px;
+        color: #C6C6C6;
+        text-align: left;
+        ul{
+            li{
+                cursor: pointer;
+                font-size: 18px;
+                padding: 10px 0px;
+                list-style: none;                
+            }
+        }
+        .active{
+            color: #fff;
+        }
+    }
+    .sign-in{
+        margin: 25px 0px;
+        font-size: 25px;
+        position: absolute;
+        color: #C6C6C6;
+        bottom: 0px;
+        width: 150px;
+    }
+    .sign-in:hover{
+        color: #fff;
+    }
+}
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+}
+.flexbox-row{
+    display: flex;
+    flex-direction: row;
+}
+.logo-area{
+    h1{
+        font-size:50px;
+        color: #fff;
+    }
+    span{
+        color:#B4B4B4;
+    }
+}
+.right-pane{
+    width: 100%;
+    .toolbar{
+        padding: 5px;
+        height: 50px;
+        background: #0492B5;
+        input{
+            height: 40px;
+            margin-right: 10px;
+        }
+        .icon{
+            line-height: 40px;
+            i{
+                cursor: pointer;
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+        .key-box{
+            color: #fff;   
+        }
+    }
+    .form-control{
+        margin: 10px 0px;
+    }
+    .create-view{
+        padding: 20px;
+        display: block;
+    }
+    textarea{
+        height: 250px;
+    }
+    .art-box{
+        float: left;
+        margin: 5px;
+        width: 200px;
+        height: 100px;
+        border: solid 1px #ccc;
+        position: relative;
+        padding: 10px;
+        i{
+            position: absolute;
+            top: 2px;
+            right: 2px;
+        }
+    }
+    
+}
